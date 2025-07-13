@@ -8,6 +8,7 @@
     <section class="newsletter-subscribe py-4 py-xl-5">
         <div class="container">
             <form class="d-flex justify-content-center flex-wrap" method="post">
+                {{ csrf_field() }}
                 <select class="form-control" name = "departure_city">
                     <option value="{{ 0 }}">Город отправления </option>
                     @foreach($cities as $city)
