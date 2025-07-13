@@ -2,7 +2,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link href="{{ asset('../css/bootstrap.min.css') }}" rel="stylesheet">
-    <title>MySiteDesign</title>
 </head>
 <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark">
     <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg class="bi bi-bezier" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
