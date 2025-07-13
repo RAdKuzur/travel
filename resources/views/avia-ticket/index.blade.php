@@ -8,10 +8,19 @@
     <section class="newsletter-subscribe py-4 py-xl-5">
         <div class="container">
             <form class="d-flex justify-content-center flex-wrap" method="post">
-                <input class="form-control" type="text" placeholder="Город, аэропорт отправления" />
-                <input class="form-control" type="text" placeholder="Дата отправления" />
-                <input class="form-control" type="text" placeholder="Город, аэропорт прибытия" />
-                <input class="form-control" type="text" placeholder="Дата прибытия" />
+                <select class="form-control" name = "departure_city">
+                    <option value="{{ 0 }}">Город отправления </option>
+                    @foreach($cities as $city)
+                        <option value="{{ $city->id }}">{{ $city->name }}</option>
+                    @endforeach
+                </select>
+                <input class="form-control" type="date" name="departure_date" placeholder="Дата отправления">
+                <select class="form-control" name = "arrival_city">
+                    <option value="{{ 0 }}">Город прибытия</option>
+                    @foreach($cities as $city)
+                        <option value="{{ $city->id }}">{{ $city->name }}</option>
+                    @endforeach
+                </select>
                 <div class="mb-3 ms-2">
                     <button class="btn btn-primary" type="submit">Искать</button>
                 </div>

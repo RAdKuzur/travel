@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
 Route::get('/avia', [AviaTicketController::class, 'index'])->name('avia.index');
+Route::post('/avia', [AviaTicketController::class, 'find'])->name('avia.find');
