@@ -13,6 +13,5 @@ class AviaTicketService
         $this->apiService = $apiService;
     }
     public function getTickets($departureCity, $arrivalCity, $date){
-        $response = $this->apiService->get()
     }
 }
